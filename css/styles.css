@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    padding: 14px 30px;
+    position: relative;
+
+}
+
+.nav-logo {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+
+}
+
+.navbar .nav-links a {
+    padding: 10px 12px;
+    text-decoration: none;
+    font-weight: 550;
+    color: #080808;
+}
+
+/* Hover effects */
+.navbar .nav-links a:hover {
+    color: #e58d41;
+}
+
+/* responsive navbar toggle button */
+.navbar #nav-check,
+.navbar .nav-btn {
+    display: none;
+}
+
+@media (max-width:767px) {
+    .navbar .nav-btn {
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+
+    .navbar .nav-btn label {
+        display: inline-block;
+        width: 80px;
+        height: 70px;
+        padding: 25px;
+    }
+
+    .navbar .nav-btn label span {
+        display: block;
+        height: 10px;
+        width: 25px;
+        border-top: 3px solid #080808;
+
+    }
+
+    .navbar .nav-links {
+        position: absolute;
+        display: block;
+        text-align: center;
+        width: 50%;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 70px;
+        right: 0px;
+    }
+
+    .navbar .nav-links a {
+        display: block;
+    }
+
+    /* when nav toggle button not checked */
+    .navbar #nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+
+    /* when nav toggle button is checked */
+    .navbar #nav-check:checked~.nav-links {
+        height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+
+}
+
+
+
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 2%;
+    padding: 0 2%;
+    box-sizing: border-box;
+}
+
+.fullwidth {
+    width: 100%;
+    float: left;
+    margin-bottom: 30px;
+}
+
+
+.responsiveImg {
+    width: 100%;
+    float: left;
+}
+
+.responsiveImg1 {
+
+    float: left;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+
+.responsiveImg2 {
+    width: 50%;
+    float: left;
+    justify-content: end;
+}
+
+.halfwidth {
+    width: 50%;
+    float: left;
+}
+
+
+.footeraline1 {
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+
+.footeraline2 {
+    width: 50%;
+    float: left;
+    text-align: right;
+
+}
+
+.thirdpart {
+    width: 33.33%;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #080808;
+    float: left;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1cm;
+    width: 100%;
+    float: left;
+}
+
+hr.new {
+    margin-top: 1ch;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 100px;
+    width: 2ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* for Smartphone */
+@media screen and (max-width:767px) {
+    .thirdpart {
+        width: 100%;
+    }
+
+    .halfwidth {
+        width: 100%;
+    }
+    .footeraline1 {
+        width: 50%;
+    }
+    
+    .footeraline2 {
+        width: 50%;
+    }
+    hr.new {
+        width: 2ch;
+    }
+    .center {
+        width: 100%;
+    }
+    .navbar .nav-btn {
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+
+    .navbar .nav-btn label {
+        display: inline-block;
+        width: 80px;
+        height: 70px;
+        padding: 25px;
+    }
+
+    .navbar .nav-btn label span {
+        display: block;
+        height: 10px;
+        width: 25px;
+        border-top: 3px solid #080808;
+
+    }
+
+    .navbar .nav-links {
+        position: absolute;
+        display: block;
+        text-align: center;
+        width: 50%;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 70px;
+        right: 0px;
+    }
+
+    .navbar .nav-links a {
+        display: block;
+    }
+
+    /* when nav toggle button not checked */
+    .navbar #nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+
+    /* when nav toggle button is checked */
+    .navbar #nav-check:checked~.nav-links {
+        height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+
+}
+
+/* for smart tabs*/
+@media screen and (min-width:768px)and(max-width:991px) {
+    .thirdpart {
+        width: 100%;
+    }
+}
